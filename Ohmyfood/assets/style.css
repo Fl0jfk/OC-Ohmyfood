@@ -1,0 +1,30 @@
+@font-face {
+    font-family: "Shrikhand";
+    src: url(fonts/Shrikhand/Shrikhand-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url(fonts/Roboto/Roboto-Regular.ttf);
+}
+
+:root {
+    --color-main :#9356DC;
+    --color-second : #FF79DA;
+    --color-third : #99E2D0;
+}
+
+* {
+    font-family: "Roboto", sans-serif;
+    list-style-type: none;
+    margin: none;
+    padding: none;
+    text-decoration: none;
+    color: black;
+}
+
+img {
+    width: 700px;
+}
+
+
