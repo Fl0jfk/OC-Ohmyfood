@@ -53,12 +53,6 @@ h3 {
     line-height: 1.313em;
 }
 
-h4 {
-    font-size: 1.063em;
-    line-height: 1.25em;
-    white-space: nowrap;
-}
-
 a {
     font-weight: 400;
 }
@@ -346,12 +340,12 @@ main {
     }
 
     @media screen and (max-width:992px) {
-        .containerFiltreH3 {
+        .containerFiltreH2 {
             font-size: 0.938em;
         }
     }
         @media screen and (max-width:768px) {
-            .containerFiltreH3 {
+            .containerFiltreH2 {
                 font-size: 1.25em;
                 margin-bottom: 1em;
             }
@@ -437,14 +431,20 @@ main {
     background-color: var(--color-hover-button);
 }
 
+.buttonFiltreh3 {
+    font-size: 1.063em;
+    line-height: 1.25em;
+    white-space: nowrap;
+}
+
     @media screen and (max-width:992px) {
-        h4 {
+        .buttonFiltreh3 {
             font-size: 0.938em;
             line-height: 1.25em;
         }
     }
         @media screen and (max-width:768px) {
-            h4 {
+            .buttonFiltreh3 {
                 font-size: 0.75em;
                 white-space: normal; 
             }
@@ -715,11 +715,6 @@ main {
 .sectionActivitesH2 {
     align-self: flex-start;
 }
-    @media screen and (max-width:768px) {
-        .sectionActivitesH2{
-            max-width: 200px;
-        }
-    }
 
 .containerActivites {
     display: flex;
