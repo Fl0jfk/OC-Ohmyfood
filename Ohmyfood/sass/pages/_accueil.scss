@@ -83,6 +83,7 @@
     align-items: center;
     gap:2%;
     background: var(--color-background-main);
+    white-space: nowrap;
 }
 
 .how-to-button:hover {
@@ -122,6 +123,11 @@
     align-self: center;
     font-weight: 500;
 }
+@media screen and (min-width: 768px) and (max-width: 800px){
+    .how-to-txt {
+        font-size: 0.95em;
+    }
+}
 
 /*SECTION RESTAURANT*/
 
@@ -140,14 +146,14 @@
 
 .section-restaurant-title {
     width: 92%;
-    padding: 4%;
+    padding: 2em 4% 0.5em 4%;
 }
     @media screen and (min-width: 768px) {
         .section-restaurant-title{
+            max-width: 1200px;
             margin: auto;
-            max-width: 75em;
             margin-bottom: -1.25em;
-            padding:  2.5em 0em 1.875em 0em;
+            padding:  2.5em 4% 1.875em 4%;
         }
     }
 
