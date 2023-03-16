@@ -12,6 +12,13 @@
     --color-main :#9356DC;
     --color-second : #FF79DA;
     --color-third : #99E2D0;
+    --color-white : #ffffff;
+    --color-fourth : #353535;
+    --color-background-main : #f6f6f6;
+    --color-background-second : #eaeaea;
+    --color-hover-howtobtn : #F5EDFF;
+    --color-icon-howtobtn :#7e7e7e;
+    --color-font-pin-new: #008766;
 }
 
 * {
@@ -24,7 +31,7 @@
 }
 
 .color-white {
-    color: white;
+    color: var(--color-white);
 }
 
 /*BOX-SHADOW*/
@@ -55,6 +62,25 @@
     border-radius: 15px 15px 0px 0px;
 }
 
+/*BUTTON*/
+
+.main-button {
+    padding: 15px 20px;
+    background: linear-gradient(-8deg, var(--color-main) -5.2%, var(--color-second) 110.74%);
+    border-radius: 25px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-weight: 500;
+    width: 187px;
+    text-align: center;
+    align-self: center;
+}
+
+.main-button:hover {
+    opacity: 90%;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.5);
+}
+
 /*HEADER*/
 
 header {
@@ -69,7 +95,6 @@ header {
 .header-side {
     width: 25%;
     display: flex;
-    align-items: center;
 }
 
 .header-center {
@@ -84,7 +109,8 @@ header {
 
 .header-arrow {
     margin-left: 23px;
-    font-size: 20px;
+    font-size: 23px;
+    height: 30px;
 }
 
 /*SECTION LOCATION*/
@@ -94,23 +120,27 @@ header {
     align-items: center;
     justify-content: center;
     gap: 20px;
-    background: #EAEAEA;
+    background: var(--color-background-second);
     padding-right: 5%;
     height: 40px;
 }
-
-@media screen and (min-width: 768px) {
-    .section-location{
-        padding-right: 0px;
-        gap : 10px;
+    @media screen and (min-width: 768px) {
+        .section-location{
+            padding-right: 0px;
+            gap : 10px;
+        }
     }
+
+.section-location-txt {
+    font-weight: 500;
+    letter-spacing: 0em;
+    color: var(--color-fourth);
 }
     
-
 /* SECTION RESERVE*/ 
 
 .section-reserve {
-    background: #f6f6f6;
+    background: var(--color-background-main);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -118,19 +148,18 @@ header {
     text-align: center;
     gap: 10px;
 } 
+    @media screen and (min-width: 768px) {
+        .section-reserve-title{
+        font-size: 40px;
+        line-height: 47px;
+        }
+    }
 
-.section-reserve-button {
-    padding: 15px 20px;
-    color: white;
-    background: linear-gradient(-8deg, #9356DC -5.2%, #FF79DA 110.74%);
-    border-radius: 25px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-
-.section-reserve-button:hover {
-    opacity: 90%;
-    box-shadow: 0px 4px 10px rgba(0,0,0,0.5);
+.section-reserve-txt {
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 21px;
+    color: var(--color-fourth);
 }
 
 /*SECTION HOW TO*/
@@ -145,13 +174,12 @@ header {
     padding-bottom: 50px;
     max-width: 1500px;
 }
-
-@media screen and (min-width: 768px) {
-    .section-how-to{
-        max-width: 1200px;
-        margin: auto;
+    @media screen and (min-width: 768px) {
+        .section-how-to{
+            max-width: 1200px;
+            margin: auto;
+        }
     }
-}
 
 .section-how-to-container {
     display: flex;
@@ -160,12 +188,11 @@ header {
     gap : 25px;
     width: 100%;
 }
-
-@media screen and (min-width: 768px) {
-    .section-how-to-container{
-        flex-direction: row;
+    @media screen and (min-width: 768px) {
+        .section-how-to-container{
+            flex-direction: row;
+        }
     }
-}
 
 .how-to-button {
     padding: 20px 0px;
@@ -174,15 +201,15 @@ header {
     display: flex;
     align-items: center;
     gap:2%;
-    background: #f7f7f7;
+    background: var(--color-background-main);
 }
 
 .how-to-button:hover {
-    background: #F5EDFF;
+    background: var(--color-hover-howtobtn);
 }
 
 .how-to-button:hover .how-to-logo{
-    color: #9356DC;
+    color: var(--color-main);
 }
 
 .how-to-number {
@@ -195,7 +222,6 @@ header {
     width: 24px;
     height: 24px;
     border-radius: 50%;
-    color: white;
     font-size: 14px;
 }
 
@@ -207,18 +233,19 @@ header {
 }
 
 .how-to-logo {
-    color: #7e7e7e;
+    color: var(--color-icon-howtobtn);
 }
 
 .how-to-txt {
     width: 100%;
     align-self: center;
+    font-weight: 500;
 }
 
 /*SECTION RESTAURANT*/
 
 .section-restaurant {
-    background: #f6f6f6;
+    background: var(--color-background-main);
     display: flex;
     flex-direction: column;
     padding: 4%;
@@ -226,30 +253,28 @@ header {
     padding-bottom: 50px;
     width: 92%;
 }
-
-@media screen and (min-width: 768px) {
-    .section-restaurant{
-        overflow: scroll;
+    @media screen and (min-width: 768px) {
+        .section-restaurant{
+            overflow: scroll;
+        }
     }
-}
 
 .section-restaurant-title {
     width: 92%;
     padding: 4%;
 }
-
-@media screen and (min-width: 768px) {
-    .section-restaurant-title{
-        margin: auto;
-        max-width: 1200px;
-        margin-bottom: -20px;
-        padding-top: 40px;
-        padding-bottom: 30px;
+    @media screen and (min-width: 768px) {
+        .section-restaurant-title{
+            margin: auto;
+            max-width: 1200px;
+            margin-bottom: -20px;
+            padding-top: 40px;
+            padding-bottom: 30px;
+        }
     }
-}
 
 .section-restaurant-title-background {
-    background: #f6f6f6;
+    background: var(--color-background-main);
     padding-bottom: 20px;
 }
 
@@ -258,26 +283,24 @@ header {
     flex-direction: column;
     width: 100%;
 }
-
-@media screen and (min-width: 768px) {
-    .restaurant-container-card{
-        flex-direction: row;
-        margin: auto;
-        max-width: 1200px;
-        gap: 10px
+    @media screen and (min-width: 768px) {
+        .restaurant-container-card{
+            flex-direction: row;
+            margin: auto;
+            max-width: 1200px;
+            gap: 10px
+        }
     }
-}
 
 .restaurant-card {
     height:251px;
     width: 100%;
 }
-
-@media screen and (min-width: 768px) {
-    .restaurant-card{
-       min-width: 335px;
+    @media screen and (min-width: 768px) {
+        .restaurant-card{
+        min-width: 335px;
+        }
     }
-}
 
 .restaurant-card-article {
     height: 100%;
@@ -292,9 +315,8 @@ header {
     width: 60px;
     font-size: 14px;
     font-weight: 500;
-    line-height: 16px;
     background-color: var(--color-third) ;
-    color:#008766;
+    color: var(--color-font-pin-new);
     padding: 3px 5px;
 }
 
@@ -315,9 +337,19 @@ header {
     padding-right: 3%;
     height: 30%;
     display: flex;
-    flex-direction: row;
     align-items: center;
     justify-content: space-between;
+}
+
+.restaurant-card-title {
+    font-size: 18px;
+    line-height: 21px;
+}
+
+.restaurant-card-city {
+    font-size: 17px;
+    font-weight: 300;
+    line-height: 20px;
 }
 
 .restaurant-card-heart {
@@ -328,39 +360,36 @@ header {
     margin-right: 5%;
     cursor: pointer;
 }
-
-@media screen and (min-width: 768px) {
-    .restaurant-card-heart{
-        margin-right: 0px;
-        right: 55px;
-        bottom: 30px;
-        font-size: 22px;
+    @media screen and (min-width: 768px) {
+        .restaurant-card-heart{
+            margin-right: 0px;
+            right: 55px;
+            bottom: 30px;
+            font-size: 22px;
+        }
     }
-}
 
 /*FOOTER*/
 
 footer {
-    background: #353535;
+    background: var(--color-fourth);
     display: flex;
     flex-direction: column;
     gap: 10px;
     padding: 25px;
 }
-
-@media screen and (min-width: 768px) {
-    footer{
-        flex-direction: row-reverse;
-        gap: 3%;
-        align-items: center;
-        padding-right: 6%;
-        white-space: nowrap;
-        height: 114px;
+    @media screen and (min-width: 768px) {
+        footer{
+            flex-direction: row-reverse;
+            gap: 3%;
+            align-items: center;
+            padding-right: 6%;
+            white-space: nowrap;
+            height: 114px;
+        }
     }
-}
 
 .footer-logo {
-    color: white;
     font-family: "Shrikhand";
     font-size: 18px;
     line-height: 26px;
@@ -372,12 +401,20 @@ footer {
     flex-direction: column;
     gap: 8px;
 }
-
-@media screen and (min-width: 768px) {
-    .footer-container{
-        flex-direction: row;
-        gap: 4%;
+    @media screen and (min-width: 768px) {
+        .footer-container{
+            flex-direction: row;
+            gap: 4%;
+        }
     }
+
+.footer-txt {
+    font-weight: 500;
+    margin-left: 5px;
+}
+
+.footer-icon {
+    width: 20px;
 }
 
 /*MENUS*/
@@ -386,51 +423,37 @@ footer {
     width: 100%;
     object-fit: cover;
     margin-top: -0.2em;
-}
-
-@media screen and (min-width: 768px) {
-    .menus-image{
-        height : 500px;
-    }
+    height: 450px;
 }
 
 .section-menu {
     padding: 25px 4%;
     width: 92%;
-    background: #f7f7f7;
+    background: var(--color-background-main);
     display: flex;
     flex-direction: column;
     position: relative;
-    bottom: 50px;
     margin-bottom: -50px;
     border-radius: 40px 40px 0px 0px;
     gap: 35px;
     max-width: 1200px;
     margin: auto;
-}
-
-@media screen and (min-width: 768px) {
-    .section-menu{
-        margin-top: -80px;
-        bottom: 0px;
-    }
+    margin-top: -80px;
 }
 
 .section-menu-container-title {
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
     align-items: center;
     width: 100%;
 }
-
-@media screen and (min-width: 768px) {
-    .section-menu-container-title{
-        justify-content: center;
-        gap :30px;
-        margin-top: 30px;
+    @media screen and (min-width: 768px) {
+        .section-menu-container-title{
+            justify-content: center;
+            gap :30px;
+            margin-top: 30px;
+        }
     }
-}
 
 .section-menu-title {
     font-family: "Shrikhand";
@@ -441,6 +464,7 @@ footer {
 
 .section-menu-heart {
     font-size: 22px;
+    cursor: pointer;
 }
 
 .section-meal {
@@ -452,13 +476,13 @@ footer {
     margin: auto;
 }
 
-@media screen and (min-width: 768px) {
-    .section-menu-container-title{
-        justify-content: center;
-        gap :30px;
-        margin-top: 30px;
+    @media screen and (min-width: 768px) {
+        .section-menu-container-title{
+            justify-content: center;
+            gap :30px;
+            margin-top: 30px;
+        }
     }
-}
 
 .section-meal-title {
     font-size: 16px;
@@ -469,7 +493,7 @@ footer {
 .section-meal-title-border {
     margin-top: -5px;
     margin-bottom: 5px;
-    border-top: 3px solid #99E2D0;
+    border-top: 3px solid var(--color-third);
     width: 40px;
 }
 
@@ -480,32 +504,29 @@ footer {
     width: 100%;
     align-items: center;
 }
-
-@media screen and (min-width: 768px) {
-    .section-meal-container{
-        gap:20px;
+    @media screen and (min-width: 768px) {
+        .section-meal-container{
+            gap:20px;
+        }
     }
-}
 
 .meal-card {
     display: flex;
-    flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-between;
     align-items: center;
     padding: 4%;
     max-height:40px;
     width: 92%;
-    background: white;
+    background: var(--color-white);
     max-width: 1000px;
 }
-
-@media screen and (min-width: 768px) {
-    .meal-card{
-       padding-bottom: 20px;
-       padding-top: 20px;
+    @media screen and (min-width: 768px) {
+        .meal-card{
+        padding-bottom: 20px;
+        padding-top: 20px;
+        }
     }
-}
 
 .meal-card-txt {
     display: flex;
@@ -518,7 +539,7 @@ footer {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    font-weight: 600;
+    font-weight: 500;
     font-size: 18px;
     line-height: 21px;
 }
@@ -527,31 +548,21 @@ footer {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    font-size: 14px;
-    font-weight: 100;
-    line-height: 17px;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 18px;
 }
+    @media screen and (min-width: 768px) {
+        .meal-card-description{
+        font-size: 16px;
+        line-height: 19px;
+        font-weight: 400;
+        }
+    }
 
 .meal-card-price {
     align-self: flex-end;
     font-size: 15px;
-    font-weight: 600;
+    font-weight: 700;
     line-height: 17.58px;
-}
-
-.section-menu-button {
-    padding: 15px 20px;
-    color: white;
-    background: linear-gradient(-8deg, #9356DC -5.2%, #FF79DA 110.74%);
-    border-radius: 25px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    width: 187px;
-    align-self: center;
-    text-align: center;
-}
-
-.section-menu-button:hover {
-    opacity: 90%;
-    box-shadow: 0px 4px 10px rgba(0,0,0,0.5);
 }
