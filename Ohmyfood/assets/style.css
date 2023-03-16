@@ -1,3 +1,5 @@
+/*IMPORT FONTS*/
+
 @font-face {
     font-family: "Shrikhand";
     src: url(fonts/Shrikhand/Shrikhand-Regular.ttf);
@@ -7,6 +9,8 @@
     font-family: "Roboto";
     src: url(fonts/Roboto/Roboto-Regular.ttf);
 }
+
+/*GLOBAL SETTINGS*/
 
 :root {
     --color-main :#9356DC;
@@ -24,8 +28,8 @@
 * {
     font-family: "Roboto", sans-serif;
     list-style-type: none;
-    margin: 0px;
-    padding: 0px;
+    margin: 0em;
+    padding: 0em;
     text-decoration: none;
     color: black;
 }
@@ -37,59 +41,57 @@
 /*BOX-SHADOW*/
 
 .box-shadow-header {
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
+    box-shadow: 0em 0.125em 0.25em rgba(0, 0, 0, 0.3);
 }
 
 .box-shadow-how-to {
-    box-shadow: 0px 2px 4px rgba(0,0,0,0.15);
+    box-shadow: 0em 0.125em 0.25em rgba(0,0,0,0.15);
 }
 
 .box-shadow-card {
-    box-shadow: 0px 4px 15px rgba(0,0,0,0.1);
+    box-shadow: 0em 0.125em 0.9375em rgba(0,0,0,0.1);
 }
 
 .box-shadow-button {
-    box-shadow: 0px 4px 10px rgba(0,0,0,0.25);
+    box-shadow: 0em 0.125em 0.625em rgba(0,0,0,0.25);
 }
 
 /*BORDER-RADIUS*/
 
 .border-radius-all {
-    border-radius: 15px;
+    border-radius: 0.9375em;
 }
 
 .border-radius-top {
-    border-radius: 15px 15px 0px 0px;
+    border-radius: 0.9375em 0.9375em 0em 0em;
 }
 
 /*BUTTON*/
 
 .main-button {
-    padding: 15px 20px;
+    padding: 0.9375em 1.25em;
     background: linear-gradient(-8deg, var(--color-main) -5.2%, var(--color-second) 110.74%);
-    border-radius: 25px;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    border-radius: 1.5625em;
+    margin: 1.25em 0em 1.25em 0em;
     font-weight: 500;
-    width: 187px;
+    width: 11.6875em;
     text-align: center;
     align-self: center;
 }
 
 .main-button:hover {
     opacity: 90%;
-    box-shadow: 0px 4px 10px rgba(0,0,0,0.5);
+    box-shadow: 0em 0.25em 0.625em rgba(0,0,0,0.5);
 }
 
 /*HEADER*/
 
 header {
     display: flex;
-    padding-top: 20px;
-    padding-bottom: 10px;
-    margin-bottom: 2px;
+    padding: 1.25em 0em 0.625em 0em;
+    margin-bottom: 0.125em;
     align-items: center;
-    height: 63px;
+    height: 3.9375em;
 }
 
 .header-side {
@@ -104,13 +106,13 @@ header {
 }
 
 .header-logo {
-    height: 30px;
+    height: 1.875em;
 }
 
 .header-arrow {
-    margin-left: 23px;
-    font-size: 23px;
-    height: 30px;
+    margin-left: 1.4375em;
+    font-size: 1.4375em;
+    height: 1.875em;
 }
 
 /*SECTION LOCATION*/
@@ -119,21 +121,20 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 20px;
+    gap: 1.25em;
     background: var(--color-background-second);
     padding-right: 5%;
-    height: 40px;
+    height:  2.5em;
 }
     @media screen and (min-width: 768px) {
         .section-location{
-            padding-right: 0px;
-            gap : 10px;
+            padding-right: 0em;
+            gap : 0.625em;
         }
     }
 
 .section-location-txt {
     font-weight: 500;
-    letter-spacing: 0em;
     color: var(--color-fourth);
 }
     
@@ -144,21 +145,21 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 30px;
+    padding: 1.875em;
     text-align: center;
-    gap: 10px;
+    gap: 0.625em;
 } 
     @media screen and (min-width: 768px) {
         .section-reserve-title{
-        font-size: 40px;
-        line-height: 47px;
+        font-size:  2.5em;
+        line-height: 2.9375em;
         }
     }
 
 .section-reserve-txt {
-    font-size: 18px;
+    font-size: 1.125em;
     font-weight: 300;
-    line-height: 21px;
+    line-height: 1.3125em;
     color: var(--color-fourth);
 }
 
@@ -169,14 +170,12 @@ header {
     flex-direction: column;
     padding: 4%;
     width: 92%;
-    gap: 26px;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    max-width: 1500px;
+    gap: 1.625em;
+    padding: 3.125em 0em;
 }
     @media screen and (min-width: 768px) {
         .section-how-to{
-            max-width: 1200px;
+            max-width: 75em;
             margin: auto;
         }
     }
@@ -185,7 +184,7 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap : 25px;
+    gap : 1.5625em;
     width: 100%;
 }
     @media screen and (min-width: 768px) {
@@ -195,7 +194,7 @@ header {
     }
 
 .how-to-button {
-    padding: 20px 0px;
+    padding: 1.25em 0em;
     width: 96%;
     text-align: center;
     display: flex;
@@ -217,12 +216,12 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-    right: 11px;
+    right: 0.6875em;
     background: var(--color-main);
-    width: 24px;
-    height: 24px;
+    width: 1.5em;
+    height: 1.5em;
     border-radius: 50%;
-    font-size: 14px;
+    font-size: 0.875em;
 }
 
 .how-to-position{
@@ -248,9 +247,7 @@ header {
     background: var(--color-background-main);
     display: flex;
     flex-direction: column;
-    padding: 4%;
-    padding-top: 0px;
-    padding-bottom: 50px;
+    padding: 0em 4% 3.125em 4%;
     width: 92%;
 }
     @media screen and (min-width: 768px) {
@@ -266,16 +263,15 @@ header {
     @media screen and (min-width: 768px) {
         .section-restaurant-title{
             margin: auto;
-            max-width: 1200px;
-            margin-bottom: -20px;
-            padding-top: 40px;
-            padding-bottom: 30px;
+            max-width: 75em;
+            margin-bottom: -1.25em;
+            padding:  2.5em 0em 1.875em 0em;
         }
     }
 
 .section-restaurant-title-background {
     background: var(--color-background-main);
-    padding-bottom: 20px;
+    padding-bottom: 1.25em;
 }
 
 .restaurant-container-card {
@@ -287,18 +283,18 @@ header {
         .restaurant-container-card{
             flex-direction: row;
             margin: auto;
-            max-width: 1200px;
-            gap: 10px
+            max-width: 75em;
+            gap: 0.625em;
         }
     }
 
 .restaurant-card {
-    height:251px;
+    height:15.6875em;
     width: 100%;
 }
     @media screen and (min-width: 768px) {
         .restaurant-card{
-        min-width: 335px;
+        min-width: 20.9375em;
         }
     }
 
@@ -310,14 +306,14 @@ header {
     position: relative;
     align-self: flex-end;
     text-align: center;
-    bottom: 160px;
+    bottom: 10em;
     margin-right: 5%;
-    width: 60px;
-    font-size: 14px;
+    width: 3.75em;
+    font-size: 0.875em;
     font-weight: 500;
     background-color: var(--color-third) ;
     color: var(--color-font-pin-new);
-    padding: 3px 5px;
+    padding: 0.1875em 0.3125em;
 }
 
 .restaurant-card-blockimg {
@@ -333,8 +329,7 @@ header {
 }
 
 .restaurant-card-blocktxt {
-    padding-left: 3%;
-    padding-right: 3%;
+    padding:0px 3% 0px 3%;
     height: 30%;
     display: flex;
     align-items: center;
@@ -342,30 +337,30 @@ header {
 }
 
 .restaurant-card-title {
-    font-size: 18px;
-    line-height: 21px;
+    font-size: 1.125em;
+    line-height: 1.3125em;
 }
 
 .restaurant-card-city {
-    font-size: 17px;
+    font-size: 1.0625em;
     font-weight: 300;
-    line-height: 20px;
+    line-height: 1.25em;
 }
 
 .restaurant-card-heart {
     position: relative;
-    bottom: 45px;
-    width: 18px;
+    bottom: 2.8125em;
+    width: 1.125em;
     align-self: flex-end;
     margin-right: 5%;
     cursor: pointer;
 }
     @media screen and (min-width: 768px) {
         .restaurant-card-heart{
-            margin-right: 0px;
-            right: 55px;
-            bottom: 30px;
-            font-size: 22px;
+            margin-right: 0em;
+            right: 3.4375em;
+            bottom: 1.875em;
+            font-size: 1.375em;
         }
     }
 
@@ -375,8 +370,8 @@ footer {
     background: var(--color-fourth);
     display: flex;
     flex-direction: column;
-    gap: 10px;
-    padding: 25px;
+    gap: 0.625em;
+    padding: 1.5625em;
 }
     @media screen and (min-width: 768px) {
         footer{
@@ -385,21 +380,21 @@ footer {
             align-items: center;
             padding-right: 6%;
             white-space: nowrap;
-            height: 114px;
+            height: 7.125em;
         }
     }
 
 .footer-logo {
     font-family: "Shrikhand";
-    font-size: 18px;
-    line-height: 26px;
+    font-size: 1.125em;
+    line-height: 1.625em;
     font-style: italic;
 }
 
 .footer-container {
     display: flex;
     flex-direction: column;
-    gap: 8px;
+    gap: 0.5em;
 }
     @media screen and (min-width: 768px) {
         .footer-container{
@@ -410,11 +405,11 @@ footer {
 
 .footer-txt {
     font-weight: 500;
-    margin-left: 5px;
+    margin-left: 0.3125em;
 }
 
 .footer-icon {
-    width: 20px;
+    width: 1.25em;
 }
 
 /*MENUS*/
@@ -423,22 +418,22 @@ footer {
     width: 100%;
     object-fit: cover;
     margin-top: -0.2em;
-    height: 450px;
+    height: 28.125em;
 }
 
 .section-menu {
-    padding: 25px 4%;
+    padding: 1.5625em 4%;
     width: 92%;
     background: var(--color-background-main);
     display: flex;
     flex-direction: column;
     position: relative;
-    margin-bottom: -50px;
-    border-radius: 40px 40px 0px 0px;
-    gap: 35px;
-    max-width: 1200px;
+    margin-bottom: -3.125em;
+    border-radius:  2.5em  2.5em 0em 0em;
+    gap: 2.1875em;
+    max-width: 75em;
     margin: auto;
-    margin-top: -80px;
+    margin-top: -5em;
 }
 
 .section-menu-container-title {
@@ -450,63 +445,62 @@ footer {
     @media screen and (min-width: 768px) {
         .section-menu-container-title{
             justify-content: center;
-            gap :30px;
-            margin-top: 30px;
+            gap :1.875em;
+            margin-top: 1.875em;
         }
     }
 
 .section-menu-title {
     font-family: "Shrikhand";
     font-style: italic;
-    font-size: 28px;
-    line-height: 41px;
+    font-size: 1.75em;
+    line-height: 2.5625em;
 }
 
 .section-menu-heart {
-    font-size: 22px;
+    font-size: 1.375em;
     cursor: pointer;
 }
 
 .section-meal {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 0.625em;
     width: 100%;
-    max-width: 1000px;
+    max-width: 62.5em;
     margin: auto;
 }
 
     @media screen and (min-width: 768px) {
         .section-menu-container-title{
             justify-content: center;
-            gap :30px;
-            margin-top: 30px;
+            gap :1.875em;
+            margin-top: 1.875em;
         }
     }
 
 .section-meal-title {
-    font-size: 16px;
-    line-height: 18.75px;
+    font-size: 1em;
+    line-height: 1.171875em;
     font-weight: 300;
 }
 
 .section-meal-title-border {
-    margin-top: -5px;
-    margin-bottom: 5px;
-    border-top: 3px solid var(--color-third);
-    width: 40px;
+    margin: -0.3125em 0em 0.3125em 0em;
+    border-top: 0.1875em solid var(--color-third);
+    width:  2.5em;
 }
 
 .section-meal-container {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 0.625em;
     width: 100%;
     align-items: center;
 }
     @media screen and (min-width: 768px) {
         .section-meal-container{
-            gap:20px;
+            gap:1.25em;
         }
     }
 
@@ -516,22 +510,21 @@ footer {
     justify-content: space-between;
     align-items: center;
     padding: 4%;
-    max-height:40px;
+    max-height: 2.5em;
     width: 92%;
     background: var(--color-white);
-    max-width: 1000px;
+    max-width: 62.5em;
 }
     @media screen and (min-width: 768px) {
         .meal-card{
-        padding-bottom: 20px;
-        padding-top: 20px;
+        padding-top: 1.25em 0em 1.25em 0em; 
         }
     }
 
 .meal-card-txt {
     display: flex;
     flex-direction: column;
-    gap: 5px;
+    gap: 0.3125em;
     max-width: 80%;
 }
 
@@ -540,29 +533,29 @@ footer {
     overflow: hidden;
     text-overflow: ellipsis;
     font-weight: 500;
-    font-size: 18px;
-    line-height: 21px;
+    font-size: 1.125em;
+    line-height: 1.3125em;
 }
 
 .meal-card-description {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    font-size: 15px;
+    font-size: 0.9375em;
     font-weight: 300;
-    line-height: 18px;
+    line-height: 1.125em;
 }
     @media screen and (min-width: 768px) {
         .meal-card-description{
-        font-size: 16px;
-        line-height: 19px;
+        font-size: 1em;
+        line-height:  1.1875em;
         font-weight: 400;
         }
     }
 
 .meal-card-price {
     align-self: flex-end;
-    font-size: 15px;
+    font-size: 0.9375em;
     font-weight: 700;
-    line-height: 17.58px;
+    line-height: 1.09875em;
 }
