@@ -1,0 +1,15 @@
+.main-button {
+    padding: 0.9375em 1.25em;
+    background: linear-gradient(-8deg, var(--color-main) -5.2%, var(--color-second) 110.74%);
+    border-radius: 1.5625em;
+    margin: 1.25em 0em 1.25em 0em;
+    font-weight: 500;
+    width: 11.6875em;
+    text-align: center;
+    align-self: center;
+}
+
+.main-button:hover {
+    opacity: 90%;
+    box-shadow: 0em 0.25em 0.625em rgba(0,0,0,0.5);
+}
