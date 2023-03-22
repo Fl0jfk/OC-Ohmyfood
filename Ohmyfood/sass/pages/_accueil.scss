@@ -166,13 +166,13 @@
     display: flex;
     flex-direction: column;
     width: 100%;
+    gap: 0.625em;
 }
     @media screen and (min-width: 768px) {
         .restaurant-container-card{
             flex-direction: row;
             margin: auto;
             max-width: 75em;
-            gap: 0.625em;
         }
     }
 
@@ -232,20 +232,3 @@
     font-weight: 300;
     line-height: 1.25em;
 }
-
-.restaurant-card-heart {
-    position: relative;
-    bottom: 2.8125em;
-    width: 1.125em;
-    align-self: flex-end;
-    margin-right: 5%;
-    cursor: pointer;
-}
-    @media screen and (min-width: 768px) {
-        .restaurant-card-heart{
-            margin-right: 0em;
-            right: 3.4375em;
-            bottom: 1.875em;
-            font-size: 1.375em;
-        }
-    }

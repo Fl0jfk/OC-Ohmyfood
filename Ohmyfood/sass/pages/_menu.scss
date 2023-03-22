@@ -22,14 +22,13 @@
 
 .section-menu-container-title {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    width: 100%;
+    justify-content: space-between;
 }
     @media screen and (min-width: 768px) {
         .section-menu-container-title{
             justify-content: center;
-            gap :1.875em;
+            gap :3em;
             margin-top: 1.875em;
         }
     }
@@ -39,11 +38,6 @@
     font-style: italic;
     font-size: 1.75em;
     line-height: 2.5625em;
-}
-
-.section-menu-heart {
-    font-size: 1.375em;
-    cursor: pointer;
 }
 
 .section-meal {
@@ -88,20 +82,57 @@
         }
     }
 
-.meal-card {
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    align-items: center;
-    padding: 4%;
-    max-height: 2.5em;
-    width: 92%;
-    background: var(--color-white);
-    max-width: 62.5em;
-}
-    @media screen and (min-width: 768px) {
-        .meal-card{
-        padding-top: 1.25em 0em 1.25em 0em; 
+    .meal-card {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: center;
+        padding: 4%;
+        max-height: 2.5em;
+        width: 92%;
+        background: var(--color-white);
+        max-width: 62.5em;
+        transform: translateX(100%);
+    }
+    @mixin anim-meal ($delay){
+        animation: meal 2000ms $delay forwards ease-in-out;
+    }
+    .meal-card-1{
+        @include anim-meal(0ms);
+    }
+    .meal-card-2{
+        @include anim-meal(100ms);
+    }
+    .meal-card-3{
+        @include anim-meal(200ms);
+    }
+    .meal-card-4{
+        @include anim-meal(300ms);
+    }
+    .meal-card-5{
+        @include anim-meal(400ms);
+    }
+    .meal-card-6{
+        @include anim-meal(500ms);
+    }
+    .meal-card-7{
+        @include anim-meal(600ms);
+    }
+    .meal-card-8{
+        @include anim-meal(700ms);
+    }
+    .meal-card-9{
+        @include anim-meal(800ms);
+    }
+    .meal-card-10{
+        @include anim-meal(900ms);
+    }
+    @keyframes meal {
+        from {
+            transform: translateX(100%) ;
+        }
+        to {
+            transform: translateX(0%);
         }
     }
 
