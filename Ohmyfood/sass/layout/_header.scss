@@ -1,28 +1,25 @@
-header {
+.header {
     display: flex;
     padding: 1.25em 0em 0.625em 0em;
     margin-bottom: 0.125em;
     align-items: center;
     height: 3.9375em;
-}
-
-.header-side {
-    width: 25%;
-    display: flex;
-}
-
-.header-center {
-    width: 50%;
-    display: flex;
-    justify-content: center;
-}
-
-.header-logo {
-    height: 1.875em;
-}
-
-.header-arrow {
-    margin-left: 1.4375em;
-    font-size: 1.4375em;
-    height: 1.875em;
+    &-side {
+        width: 25%;
+        display: flex;
+    }
+    &-center {
+        width: 50%;
+        display: flex;
+        justify-content: center;
+    }
+    &-logo {
+        height: 1.875em;
+    }
+    &-arrow {
+        margin-left: 1.4375em;
+        font-size: 1.4375em;
+        height: 1.875em;
+        margin-top: 25%;
+    }
 }

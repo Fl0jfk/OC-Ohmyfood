@@ -1,76 +1,14 @@
 .main-button {
     padding: 0.9375em 1.25em;
-    background: linear-gradient(-8deg, var(--color-main) -5.2%, var(--color-second) 110.74%);
+    background: linear-gradient(-8deg, $color-main -5.2%, $color-second 110.74%);
     border-radius: 1.5625em;
     margin: 1.25em 0em 1.25em 0em;
     font-weight: 500;
     width: 11.6875em;
     text-align: center;
     align-self: center;
-}
-
-.main-button:hover {
-    opacity: 90%;
-    box-shadow: 0em 0.25em 0.625em rgba(0,0,0,0.5);
-}
-
-.restaurant-card-heart {
-    display: flex;
-    position: relative;
-    bottom: 3em;
-    align-self: flex-end;
-    margin-right: 8%;
-    cursor: pointer;
-    align-items: center;
-    justify-content: center;
-}
-    @media screen and (min-width: 768px) {
-        .restaurant-card-heart{
-            right: 3em;
-            margin-right: 0em;
-            bottom: 2.5em;
+        &:hover {
+            opacity: 90%;
+            box-shadow: 0em 0.25em 0.625em rgba(0,0,0,0.5);
         }
-    }
-
-.fa-heart {
-    position: absolute;
-    font-size: 1.5em;
-    width: 28px;
-    text-align: center;
 }
-
-.progress__heart {
-    font-size: 0em;
-    background: linear-gradient(var(--color-main),var(--color-second));
-    color: transparent;
-    background-clip: text;
-    -webkit-background-clip: text;
-}
-
-.section-menu-heart {
-    display: flex;
-    cursor: pointer;
-    align-items: center;
-    margin-right: 1.75em;
-}
-
-.restaurant-card-heart:hover .progress__heart, .section-menu-heart:hover .progress__heart{
-    animation: heart 200ms both;
-}
-    @keyframes heart {
-        25% {
-            font-size: 0.3em;
-        }
-        50% {
-            font-size: 0.7em;
-        }
-        65% {
-            font-size: 1.0em;
-        }
-        80% {
-            font-size: 1.3em;
-        }
-        100% {
-            font-size: 1.6em;
-        }
-    }

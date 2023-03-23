@@ -1,0 +1,6 @@
+@mixin anim-meal ($delay){
+    animation: meal 700ms $delay forwards ease-in-out;
+}
+@mixin anim-loader ($delay){
+    animation: bounce 3s $delay ease-in-out infinite;
+} 

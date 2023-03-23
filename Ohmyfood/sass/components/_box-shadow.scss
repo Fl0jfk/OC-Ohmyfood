@@ -1,17 +1,16 @@
 /*BOX-SHADOW*/
 
-.box-shadow-header {
-    box-shadow: 0em 0.125em 0.25em rgba(0, 0, 0, 0.3);
-}
-
-.box-shadow-how-to {
-    box-shadow: 0em 0.125em 0.25em rgba(0,0,0,0.15);
-}
-
-.box-shadow-card {
-    box-shadow: 0em 0.125em 0.9375em rgba(0,0,0,0.1);
-}
-
-.box-shadow-button {
-    box-shadow: 0em 0.125em 0.625em rgba(0,0,0,0.25);
+.box-shadow {
+    &-header {
+        box-shadow: 0em 0.125em 0.25em rgba(0, 0, 0, 0.3);
+    }
+    &-how-to {
+        box-shadow: 0em 0.125em 0.25em rgba(0,0,0,0.15);
+    }
+    &-card {
+        box-shadow: 0em 0.125em 0.9375em rgba(0,0,0,0.1);
+    }
+    &-button {
+        box-shadow: 0em 0.125em 0.625em rgba(0,0,0,0.25);
+    }
 }

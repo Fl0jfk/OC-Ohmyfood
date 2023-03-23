@@ -8,7 +8,7 @@
 .section-menu {
     padding: 1.5625em 4%;
     width: 92%;
-    background: var(--color-background-main);
+    background:$color-background-main;
     display: flex;
     flex-direction: column;
     position: relative;
@@ -18,12 +18,17 @@
     max-width: 75em;
     margin: auto;
     margin-top: -5em;
-}
-
-.section-menu-container-title {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+        &-container-title {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        &-title {
+            font-family: "Shrikhand";
+            font-style: italic;
+            font-size: 1.75em;
+            line-height: 2.5625em;
+        }
 }
     @media screen and (min-width: 768px) {
         .section-menu-container-title{
@@ -33,13 +38,6 @@
         }
     }
 
-.section-menu-title {
-    font-family: "Shrikhand";
-    font-style: italic;
-    font-size: 1.75em;
-    line-height: 2.5625em;
-}
-
 .section-meal {
     display: flex;
     flex-direction: column;
@@ -47,8 +45,24 @@
     width: 100%;
     max-width: 62.5em;
     margin: auto;
+        &-title {
+            font-size: 1em;
+            line-height: 1.171875em;
+            font-weight: 300;
+                &-border {
+                    margin: -0.3125em 0em 0.3125em 0em;
+                    border-top: 0.1875em solid $color-third;
+                    width:  2.5em;
+                }
+        }
+        &-container {
+            display: flex;
+            flex-direction: column;
+            gap: 0.625em;
+            max-width: 100%;
+            align-items: center;
+        }
 }
-
     @media screen and (min-width: 768px) {
         .section-menu-container-title{
             justify-content: center;
@@ -56,109 +70,60 @@
             margin-top: 1.875em;
         }
     }
-
-.section-meal-title {
-    font-size: 1em;
-    line-height: 1.171875em;
-    font-weight: 300;
-}
-
-.section-meal-title-border {
-    margin: -0.3125em 0em 0.3125em 0em;
-    border-top: 0.1875em solid var(--color-third);
-    width:  2.5em;
-}
-
-.section-meal-container {
-    display: flex;
-    flex-direction: column;
-    gap: 0.625em;
-    width: 100%;
-    align-items: center;
-}
     @media screen and (min-width: 768px) {
         .section-meal-container{
             gap:1.25em;
         }
     }
 
-    .meal-card {
-        display: flex;
-        flex-wrap: nowrap;
-        justify-content: space-between;
-        align-items: center;
-        padding: 4%;
-        max-height: 2.5em;
-        width: 92%;
-        background: var(--color-white);
-        max-width: 62.5em;
-        transform: translateX(100%);
-    }
-    @mixin anim-meal ($delay){
-        animation: meal 2000ms $delay forwards ease-in-out;
-    }
-    .meal-card-1{
-        @include anim-meal(0ms);
-    }
-    .meal-card-2{
-        @include anim-meal(100ms);
-    }
-    .meal-card-3{
-        @include anim-meal(200ms);
-    }
-    .meal-card-4{
-        @include anim-meal(300ms);
-    }
-    .meal-card-5{
-        @include anim-meal(400ms);
-    }
-    .meal-card-6{
-        @include anim-meal(500ms);
-    }
-    .meal-card-7{
-        @include anim-meal(600ms);
-    }
-    .meal-card-8{
-        @include anim-meal(700ms);
-    }
-    .meal-card-9{
-        @include anim-meal(800ms);
-    }
-    .meal-card-10{
-        @include anim-meal(900ms);
-    }
-    @keyframes meal {
-        from {
-            transform: translateX(100%) ;
-        }
-        to {
-            transform: translateX(0%);
-        }
-    }
-
-.meal-card-txt {
+.meal-card {
     display: flex;
-    flex-direction: column;
-    gap: 0.3125em;
-    max-width: 80%;
-}
-
-.meal-card-name {
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    font-weight: 500;
-    font-size: 1.125em;
-    line-height: 1.3125em;
-}
-
-.meal-card-description {
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    font-size: 0.9375em;
-    font-weight: 300;
-    line-height: 1.125em;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4%;
+    max-height: 2.5em;
+    width: 92%;
+    background: $color-white;
+    max-width: 62.5em;
+    cursor: pointer;
+    z-index: 2;
+        &-txt {
+            display: flex;
+            flex-direction: column;
+            gap: 0.3125em;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            max-width: 80%;
+        }
+        &-name {
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            font-weight: 500;
+            font-size: 1.125em;
+            line-height: 1.3125em;
+        }
+        &-description {
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            font-size: 0.9375em;
+            font-weight: 300;
+            line-height: 1.125em;
+        }
+        &-price {
+            align-self: flex-end;
+            font-size: 0.9375em;
+            font-weight: 700;
+            line-height: 1.09875em;
+        }
+        &-container {
+            width: 100%;
+            display: flex;
+            align-items: center;
+        }
 }
     @media screen and (min-width: 768px) {
         .meal-card-description{
@@ -167,10 +132,3 @@
         font-weight: 400;
         }
     }
-
-.meal-card-price {
-    align-self: flex-end;
-    font-size: 0.9375em;
-    font-weight: 700;
-    line-height: 1.09875em;
-}

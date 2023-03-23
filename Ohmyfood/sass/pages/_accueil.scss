@@ -5,9 +5,13 @@
     align-items: center;
     justify-content: center;
     gap: 1.25em;
-    background: var(--color-background-second);
+    background: $color-background-second;
     padding-right: 5%;
     height:  2.5em;
+    &-txt {
+        font-weight: 500;
+        color: $color-fourth;
+    }
 }
     @media screen and (min-width: 768px) {
         .section-location{
@@ -15,22 +19,23 @@
             gap : 0.625em;
         }
     }
-
-.section-location-txt {
-    font-weight: 500;
-    color: var(--color-fourth);
-}
     
 /* SECTION RESERVE*/ 
 
 .section-reserve {
-    background: var(--color-background-main);
+    background: $color-background-main;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 1.875em;
     text-align: center;
     gap: 0.625em;
+        &-txt {
+            font-size: 1.125em;
+            font-weight: 300;
+            line-height: 1.3125em;
+            color: $color-fourth;
+        }
 } 
     @media screen and (min-width: 768px) {
         .section-reserve-title{
@@ -38,13 +43,6 @@
         line-height: 2.9375em;
         }
     }
-
-.section-reserve-txt {
-    font-size: 1.125em;
-    font-weight: 300;
-    line-height: 1.3125em;
-    color: var(--color-fourth);
-}
 
 /*SECTION HOW TO*/
 
@@ -54,113 +52,102 @@
     width: 92%;
     gap: 1.625em;
     padding: 3.125em 4%;
+    &-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap : 1.5625em;
+        width: 100%;
+    }
 }
     @media screen and (min-width: 768px) {
         .section-how-to{
             max-width: 75em;
             margin: auto;
+            &-container {
+                flex-direction: row;
+            }
         }
     }
 
-.section-how-to-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap : 1.5625em;
-    width: 100%;
+.how-to {
+    &-logo {
+        color: $color-icon-howtobtn;
+    }
+    &-button {
+        padding: 1.25em 0em;
+        width: 96%;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        gap:2%;
+        background: $color-background-main;
+        white-space: nowrap;
+            &:hover {
+            background: $color-hover-howtobtn;
+                & .how-to-logo{
+                    color: $color-main;
+                }
+            }
+    }
+    &-number {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        right: 0.6875em;
+        background: $color-main;
+        width: 1.5em;
+        height: 1.5em;
+        border-radius: 50%;
+        font-size: 0.875em;
+    }
+    &-position{
+        display: flex;
+        width: 80%;
+        align-items: center;
+        gap: 5%;
+    }
+    &-txt {
+        width: 100%;
+        align-self: center;
+        font-weight: 500;
+    }
 }
-    @media screen and (min-width: 768px) {
-        .section-how-to-container{
-            flex-direction: row;
+    @media screen and (min-width: 768px) and (max-width: 800px){
+        .how-to-txt {
+            font-size: 0.95em;
         }
     }
-
-.how-to-button {
-    padding: 1.25em 0em;
-    width: 96%;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    gap:2%;
-    background: var(--color-background-main);
-    white-space: nowrap;
-}
-
-.how-to-button:hover {
-    background: var(--color-hover-howtobtn);
-}
-
-.how-to-button:hover .how-to-logo{
-    color: var(--color-main);
-}
-
-.how-to-number {
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    right: 0.6875em;
-    background: var(--color-main);
-    width: 1.5em;
-    height: 1.5em;
-    border-radius: 50%;
-    font-size: 0.875em;
-}
-
-.how-to-position{
-    display: flex;
-    width: 80%;
-    align-items: center;
-    gap: 5%;
-}
-
-.how-to-logo {
-    color: var(--color-icon-howtobtn);
-}
-
-.how-to-txt {
-    width: 100%;
-    align-self: center;
-    font-weight: 500;
-}
-@media screen and (min-width: 768px) and (max-width: 800px){
-    .how-to-txt {
-        font-size: 0.95em;
-    }
-}
 
 /*SECTION RESTAURANT*/
 
 .section-restaurant {
-    background: var(--color-background-main);
+    background: $color-background-main;
     display: flex;
     flex-direction: column;
     padding: 0em 4% 3.125em 4%;
     width: 92%;
+        &-title {
+        width: 92%;
+        padding: 2em 4% 0.5em 4%;
+            &-background {
+                background: $color-background-main;
+                padding-bottom: 1.25em;
+            }
+        }
 }
     @media screen and (min-width: 768px) {
         .section-restaurant{
             overflow: scroll;
+                &-title{
+                max-width: 1200px;
+                margin: auto;
+                margin-bottom: -1.25em;
+                padding:  2.5em 4% 1.875em 4%;
+                }
         }
     }
-
-.section-restaurant-title {
-    width: 92%;
-    padding: 2em 4% 0.5em 4%;
-}
-    @media screen and (min-width: 768px) {
-        .section-restaurant-title{
-            max-width: 1200px;
-            margin: auto;
-            margin-bottom: -1.25em;
-            padding:  2.5em 4% 1.875em 4%;
-        }
-    }
-
-.section-restaurant-title-background {
-    background: var(--color-background-main);
-    padding-bottom: 1.25em;
-}
 
 .restaurant-container-card {
     display: flex;
@@ -179,56 +166,49 @@
 .restaurant-card {
     height:15.6875em;
     width: 100%;
+        &-article {
+            height: 100%;
+        }
+        &-new {
+            position: relative;
+            align-self: flex-end;
+            bottom: 10em;
+            margin-right: 5%;
+            font-size: 0.875em;
+            font-weight: 500;
+            background-color: $color-third;
+            color: $color-font-pin-new;
+            padding: 0.1875em 0.3125em;
+        }
+        &-blockimg {
+            height:70%;
+            display: flex;
+            flex-direction: column;
+        }
+        &-image {
+            height: 100%;  
+            object-fit: cover;
+            width: 100%;
+        }
+        &-blocktxt {
+            padding:0px 3% 0px 3%;
+            height: 30%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        &-title {
+            font-size: 1.125em;
+            line-height: 1.3125em;
+        }
+        &-city {
+            font-size: 1.0625em;
+            font-weight: 300;
+            line-height: 1.25em;
+        }
 }
     @media screen and (min-width: 768px) {
         .restaurant-card{
         min-width: 20.9375em;
         }
     }
-
-.restaurant-card-article {
-    height: 100%;
-}
-
-.restaurant-card-new {
-    position: relative;
-    align-self: flex-end;
-    bottom: 10em;
-    margin-right: 5%;
-    font-size: 0.875em;
-    font-weight: 500;
-    background-color: var(--color-third) ;
-    color: var(--color-font-pin-new);
-    padding: 0.1875em 0.3125em;
-}
-
-.restaurant-card-blockimg {
-    height:70%;
-    display: flex;
-    flex-direction: column;
-}
-
-.restaurant-card-image {
-    height: 100%;  
-    object-fit: cover;
-    width: 100%;
-}
-
-.restaurant-card-blocktxt {
-    padding:0px 3% 0px 3%;
-    height: 30%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.restaurant-card-title {
-    font-size: 1.125em;
-    line-height: 1.3125em;
-}
-
-.restaurant-card-city {
-    font-size: 1.0625em;
-    font-weight: 300;
-    line-height: 1.25em;
-}

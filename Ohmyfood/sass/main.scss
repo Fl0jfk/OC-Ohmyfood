@@ -1,7 +1,13 @@
 /*IMPORT SASS*/
+@import "utils/variables";
+@import "utils/mixins";
 
 @import "base/base";
 @import "base/fonts";
+
+@import "animations/loader";
+@import "animations/check";
+@import "animations/heart";
 
 @import "components/border-radius";
 @import "components/box-shadow";
@@ -12,5 +18,3 @@
 
 @import "pages/menu";
 @import "pages/accueil";
-
-@import "utils/variables";

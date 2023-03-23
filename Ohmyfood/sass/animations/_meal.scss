@@ -1,0 +1,41 @@
+.meal-card {
+        &-1{
+            @include anim-meal(0ms);
+        }
+        &-2{
+            @include anim-meal(100ms);
+        }
+        &-3{
+            @include anim-meal(200ms);
+        }
+        &-4{
+            @include anim-meal(300ms);
+        }
+        &-5{
+            @include anim-meal(400ms);
+        }
+        &-6{
+            @include anim-meal(500ms);
+        }
+        &-7{
+            @include anim-meal(600ms);
+        }
+        &-8{
+            @include anim-meal(700ms);
+        }
+        &-9{
+            @include anim-meal(800ms);
+        }
+        &-10{
+            @include anim-meal(900ms);
+        }
+}
+
+@keyframes meal {
+    from {
+        transform: translateX(100%) ;
+    }
+    to {
+        transform: translateX(0%);
+    }
+}
