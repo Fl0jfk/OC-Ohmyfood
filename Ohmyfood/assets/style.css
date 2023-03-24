@@ -18,13 +18,38 @@
 @font-face {
   font-family: "Roboto";
   src: url(fonts/Roboto/Roboto-Regular.ttf); }
+.meal-card-1 {
+  animation: meal 700ms 0ms forwards ease-in-out; }
+.meal-card-2 {
+  animation: meal 700ms 100ms forwards ease-in-out; }
+.meal-card-3 {
+  animation: meal 700ms 200ms forwards ease-in-out; }
+.meal-card-4 {
+  animation: meal 700ms 300ms forwards ease-in-out; }
+.meal-card-5 {
+  animation: meal 700ms 400ms forwards ease-in-out; }
+.meal-card-6 {
+  animation: meal 700ms 500ms forwards ease-in-out; }
+.meal-card-7 {
+  animation: meal 700ms 600ms forwards ease-in-out; }
+.meal-card-8 {
+  animation: meal 700ms 700ms forwards ease-in-out; }
+.meal-card-9 {
+  animation: meal 700ms 800ms forwards ease-in-out; }
+.meal-card-10 {
+  animation: meal 700ms 900ms forwards ease-in-out; }
+
+@keyframes meal {
+  from {
+    transform: translateX(100%); }
+  to {
+    transform: translateX(0%); } }
 .loader {
   position: fixed;
   z-index: 1000;
   width: 100%;
   height: 100%;
   background-color: #f6f6f6;
-  opacity: 0.9;
   display: flex;
   cursor: pointer;
   animation: loader 3s forwards;
@@ -94,6 +119,12 @@
   transform: translateX(-20em);
   display: none; }
 
+.fa-circle-check {
+  font-size: 1.5em; }
+
+@media screen and (min-width: 768px) {
+  .fa-circle-check {
+    font-size: 2em; } }
 .meal-card-container:active .anim-check {
   display: flex;
   transform: translateX(0em);
@@ -122,9 +153,9 @@
     transform: translateX(0em); } }
 @keyframes icon-check {
   to {
-    transform: rotate(0deg) scale(2); }
+    transform: rotate(0deg); }
   from {
-    transform: rotate(-360deg) scale(10); } }
+    transform: rotate(-360deg); } }
 .restaurant-card-heart {
   display: flex;
   position: relative;
