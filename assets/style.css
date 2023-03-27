@@ -112,7 +112,7 @@
   position: relative;
   justify-content: center;
   align-items: center;
-  width: 10%;
+  min-width: 10%;
   height: 2.5em;
   padding: 4%;
   background-color: #99E2D0;
@@ -137,7 +137,7 @@
   z-index: 1000;
   transform: rotate(1800deg); }
 .meal-card-container:active .meal-card {
-  min-width: 50%; }
+  min-width: 70%; }
 
 @media screen and (min-width: 768px) {
   .meal-card-container:active .meal-card {
