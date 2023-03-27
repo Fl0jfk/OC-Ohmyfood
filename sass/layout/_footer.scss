@@ -26,16 +26,16 @@
     @media screen and (min-width: 768px) {
         .footer{
             flex-direction: row-reverse;
-            gap: 2.9%;
+            gap: 2.7%;
             align-items: center;
-            padding-right: 6%;
+            padding-right: 5.8%;
             height: 7.125em;
             min-width: 90%;
                 &-container{
                     flex-direction: row;
                     justify-content: end;
                     width: 100%;
-                    gap: 2.9%;
+                    gap: 2.7%;
                 }
         }
     }
