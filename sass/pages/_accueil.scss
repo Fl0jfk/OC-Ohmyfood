@@ -124,28 +124,27 @@
 
 .section-restaurant {
     background: $color-background-main;
-    display: flex;
-    flex-direction: column;
-    padding: 0em 4% 3.125em 4%;
-    width: 92%;
-        &-title {
+    &-title {
         width: 92%;
-        padding: 2em 4% 0.5em 4%;
-            &-background {
-                background: $color-background-main;
-                padding-bottom: 1.25em;
-            }
-        }
+        padding: 2em 4% 1.3em 4%;
+    }
+    &-child {
+        background: $color-background-main;
+        display: flex;
+        flex-direction: column;
+        padding: 0em 4% 3.125em 4%;
+        width: 92%;     
+    }
 }
     @media screen and (min-width: 768px) {
-        .section-restaurant{
-            overflow: scroll;
-                &-title{
-                max-width: 1200px;
-                margin: auto;
-                margin-bottom: -1.25em;
-                padding:  2.5em 4% 1.875em 4%;
-                }
+        .section-restaurant {
+            &-title{
+            max-width: 1200px;
+            margin: auto; 
+            }
+            &-child{
+                overflow: scroll;
+            }
         }
     }
 
