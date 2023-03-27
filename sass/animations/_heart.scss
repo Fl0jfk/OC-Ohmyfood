@@ -24,11 +24,13 @@
 }
 
 .progress__heart {
-    font-size: 0em;
+    font-size: 1.6em;
     background: linear-gradient($color-main, $color-second);
     color: transparent;
     background-clip: text;
     -webkit-background-clip: text;
+    transition: 300ms ease-in-out;
+    transform: scale(0);
 }
 
 .section-menu-heart {
@@ -39,22 +41,5 @@
 }
 
 .restaurant-card-heart:active .progress__heart, .section-menu-heart:active .progress__heart{
-    animation: heart 200ms both;
+    transform: scale(1);
 }
-    @keyframes heart {
-        25% {
-            font-size: 0.3em;
-        }
-        50% {
-            font-size: 0.7em;
-        }
-        65% {
-            font-size: 1.0em;
-        }
-        80% {
-            font-size: 1.3em;
-        }
-        100% {
-            font-size: 1.6em;
-        }
-    }
