@@ -186,12 +186,12 @@
             flex-direction: column;
         }
         &-image {
-            height: 100%;  
+            min-height: 100%;  
             object-fit: cover;
             width: 100%;
         }
         &-blocktxt {
-            padding:0px 3% 0px 3%;
+            padding:0em 3% 0em 3%;
             height: 30%;
             display: flex;
             align-items: center;

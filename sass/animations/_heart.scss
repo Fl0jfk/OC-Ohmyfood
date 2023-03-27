@@ -38,7 +38,7 @@
     margin-right: 1.75em;
 }
 
-.restaurant-card-heart:hover .progress__heart, .section-menu-heart:hover .progress__heart{
+.restaurant-card-heart:active .progress__heart, .section-menu-heart:active .progress__heart{
     animation: heart 200ms both;
 }
     @keyframes heart {

@@ -3,11 +3,10 @@
     justify-content: center;
     align-items: center;
     width: 10%;
-    height: 40px;
+    height: 2.5em;
     padding : 4%;
     background-color: $color-third;
-    border-radius: 0px 0.9375em 0.9375em 0px;
-    transform: translateX(-20em);
+    border-radius: 0em 0.9375em 0.9375em 0em;
     display: none;
 }
 
@@ -23,8 +22,7 @@
 .meal-card-container {
     &:active {
         & .anim-check {
-            display: flex;
-            transform: translateX(0em);
+            display: flex;     
             animation: check 500ms forwards;
         }
         & .meal-card {
@@ -33,11 +31,9 @@
         }
         & .fa-circle-check {
             z-index: 1000;
-            transform: rotate(0deg) scale(1);
             animation: icon-check 500ms 500ms forwards;
         }
     }
-
 }
     @media screen and (min-width: 768px) {
         .meal-card-container {
@@ -51,19 +47,19 @@
 
     @keyframes check {
         0% {
-            transform: translateX(-20em);
+            transform: translateX(-100%);
         }
         25% {
-            transform: translateX(-15em);
+            transform: translateX(-70%);
         }
         50% {
-            transform: translateX(-10em);
+            transform: translateX(-30%);
         }
         75% {
-            transform: translateX(3em);
+            transform: translateX(100%);
         }
         100% {
-            transform: translateX(0em);
+            transform: translateX(0%);
         }
     }
     @keyframes icon-check {
