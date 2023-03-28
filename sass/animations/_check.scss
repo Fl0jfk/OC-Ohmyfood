@@ -8,14 +8,14 @@
     padding : 4%;
     background-color: $color-third;
     border-radius: 0em 0.9375em 0.9375em 0em;
-    transform: translateX(200px) scale(0);
-    transition: 400ms ease-in-out;
+    transform: translate(100%) scale(0);
+    transition: 300ms ease;
 }
 
 .fa-circle-check {
     font-size: 1.5em;
-    transition: 600ms ease-in-out;
-    transform: rotate(0deg);
+    transition: 300ms ease-in-out;
+    transform: rotate(0deg) scale(0);
 }
 @media screen and (min-width: 768px) {
     .fa-circle-check {
@@ -26,7 +26,7 @@
 .meal-card-container {
     &:active {
         & .anim-check {   
-            transform: translateX(0px) scale(1);
+            transform: translate(0%) scale(1);
         }
         & .meal-card {
             border-radius:0.9375em 0em 0em 0.9375em;
@@ -34,7 +34,7 @@
         }
         & .fa-circle-check {
             z-index: 1000;
-            transform: rotate(1800deg);
+            transform: rotate(720deg) scale(1);
         }
         & .meal-card {
             min-width: 70%;
